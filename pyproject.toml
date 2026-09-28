@@ -1,0 +1,23 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "xai-drift-audit"
+version = "0.1.0"
+description = "Auditing the stability of XAI methods (SHAP, LIME) under data drift in credit models."
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "pandas",
+    "numpy",
+    "scikit-learn",
+    "xgboost",
+    "shap",
+    "lime",
+    "scipy",
+    "pyyaml",
+    "mlflow",
+    "pytest",
+    "ruff",
+]
